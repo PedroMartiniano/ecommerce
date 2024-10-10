@@ -1,0 +1,6 @@
+[submodule "user-service"]
+	path = user-service
+	url = https://github.com/PedroMartiniano/ecommerce-api-users.git
+[submodule "product-service"]
+	path = product-service
+	url = https://github.com/PedroMartiniano/ecommerce-api-products.git

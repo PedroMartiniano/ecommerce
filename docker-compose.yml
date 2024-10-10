@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16.2
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    environment:
+      POSTGRES_DATABASE: users
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5432:5432
+  user-service:
+    build: ./user-service
+    ports:
+      - 8090:8090
+    depends_on:
+      - postgres
+  product-service:
+    build: ./product-service
+    ports:
+      - 8091:8091
+    depends_on:
+      - postgres
+      - user-service
+
+volumes:
+  postgres_data:
+    driver: local
