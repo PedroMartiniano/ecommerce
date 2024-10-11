@@ -5,7 +5,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
     environment:
-      POSTGRES_DATABASE: users
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
     ports:
