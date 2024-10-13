@@ -4,3 +4,6 @@
 [submodule "product-service"]
 	path = product-service
 	url = https://github.com/PedroMartiniano/ecommerce-api-products.git
+[submodule "order-service"]
+	path = order-service
+	url = https://github.com/PedroMartiniano/ecommerce-api-orders.git
