@@ -14,15 +14,15 @@ O projeto está organizado nos seguintes microsserviços:
 
 ### Módulos de Suporte
 - **Camada de Banco de Dados**: Persistência e recuperação de dados
-- **Menssageria**: Eventos assincronos com RabbitMQ
-- **Segurança**: Implementação de autenticação e autorização para acesso a rotas
-- **Camada de API**: Endpoints REST para integração com frontend
+- **Mensageria**: Eventos assincronos com a utilização de um broker de mensageria
+- **Segurança**: Implementação de autenticação e autorização para acesso à rotas
+- **Camada de API**: Documentação Swagger e endpoints REST para integração com frontend
 
 ## Implementação Técnica
-- **Arquitetura**: Foi utilizada arquitetura de microsserviços para construção do sistema, e foram implementadas técnicas como DDD, arquitetura hexagonal e arquitetura limpa para construção dos serviços.
+- **Arquitetura**: Foi utilizada arquitetura de microsserviços para construção do sistema, e foram implementadas técnicas como DDD, arquitetura hexagonal e arquitetura limpa para construção dos serviços
 - **Backend**: Foi utilizado Go como linguagem principal, e Gin como framework HTTP
 - **Banco de Dados**: Foi utilizado o banco de dados relacional PostgreSQL
-- **Menssageria**: Foi utilizado RabbitMQ para comunicação assincrona entre alguns serviços.
+- **Mensageria**: Foi utilizado RabbitMQ para comunicação assincrona entre alguns serviços
 
 ## Funcionalidades
 - Cadastro e autenticação de usuários
@@ -55,11 +55,12 @@ A implementação demonstra conhecimento em:
 ## Tecnologias Utilizadas
 - Go, Gin Gonic, PostgreSQL, RabbitMQ, Docker, Docker Compose
 
+## Metodologia
+Processo de desenvolvimento e metodologias:
+- Utilizei técnicas de DDD estratégico para separação dos domínios, subdomínio e bounded context.
+- Fiz a modelagem do banco de dados de cada serviço.
+- Fiz um diagrama de como seria feita a conexão entre serviços (sincrono = HTTP; assíncrono = Mensageria).
+- Fiz a organização do design de cada serviço utilizando técnicas apropriadas e modernas, tais como: DDD, SOLID principles, Arquitetura Hexagonal e Arquitetura Limpa.
+
 ## Executando Testes
 - Em breve...
-
-## Metodologia
-[Descreva brevemente a metodologia de desenvolvimento utilizada]
-
-## Avaliação e Métricas
-[Inclua informações sobre testes, cobertura de código e outros indicadores relevantes]
