@@ -17,19 +17,33 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: admin
-#  user-service:
-#    build: ./user-service
-#    ports:
-#      - 8090:8090
-#    depends_on:
-#      - postgres
-#  product-service:
-#    build: ./product-service
-#    ports:
-#      - 8091:8091
-#    depends_on:
-#      - postgres
-#      - user-service
+  user-service:
+    build: ./user-service
+    ports:
+      - 8090:8090
+    depends_on:
+      - postgres
+  product-service:
+    build: ./product-service
+    ports:
+      - 8091:8091
+    depends_on:
+      - postgres
+      - user-service
+  order-service:
+    build: ./order-service
+    ports:
+      - 8092:8092
+    depends_on:
+      - postgres
+      - user-service
+      - product-service
+      - rabbitmq
+  payment-service:
+    build: ./payment-service
+    depends_on:
+      - postgres
+      - rabbitmq
 
 volumes:
   postgres_data:
