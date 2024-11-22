@@ -62,5 +62,40 @@ Processo de desenvolvimento e metodologias:
 - Fiz um diagrama de como seria feita a conexão entre serviços (sincrono = HTTP; assíncrono = Mensageria).
 - Fiz a organização do design de cada serviço utilizando técnicas apropriadas e modernas, tais como: DDD, SOLID principles, Arquitetura Hexagonal e Arquitetura Limpa.
 
-## Executando Testes
-- Em breve...
+---
+
+## **Entregas do 1º Bimestre**    
+
+### **1. Modelagem do Banco de Dados**  
+- Modelagem e criação do banco de dados dos serviços (2 pontos)
+
+### **2. Desenvolvimento das rotas de usuários da API de Users**  
+- Desenvolvimento das rotas de usuários da API de usuários (2 pontos) 
+
+### **3. Desenvolvimento das rotas de autenticação e autorização da API de Users**  
+- Desenvolvimento das rotas de autenticação e autorização da API de usuários (2 pontos)
+
+### **4. Desenvolvimento das rotas de produtos da API de Products**  
+- Desenvolvimento das rotas de produtos da API de produtos (2 pontos)
+
+### **5. Desenvolvimento das rotas de estoque da API de Products**  
+- Desenvolvimento das rotas de estoque da API de produtos (2 pontos)
+
+---
+
+## **Entregas do 2º Bimestre**  
+
+### **1. Instancimento do RabbitMQ**  
+- Instanciamento do broker de mensageria (2 pontos) 
+
+### **2. Orquestração e desenvolvimento da API de Orders**  
+- Orquestração e desenvolvimento da API de pedidos (2 pontos)
+
+### **3. Orquestração e desenvolvimento da API de Payments**  
+- Orquestração e desenvolvimento da API de pagamentos (2 pontos)
+
+### **4. Desenvolvimento da documentação swagger de todos os serviços**  
+- Documentação Swagger para os serviços (2 pontos)
+
+### **5. Testes da integração entre os serviços através do Insomnia**  
+- Testes de integração de serviços (2 pontos)
